@@ -1,0 +1,121 @@
+@media(max-width:768px){
+    nav ol li{
+    border-bottom: 1px solid white;
+    }
+    .foodandtext, .items{
+        flex-direction: column;
+        align-items: center;
+    }
+    .item{
+        width:90%;
+    }
+}
+html{
+    scroll-behavior:smooth;
+}
+body {
+    background: linear-gradient(90deg, #FFde59, #FF914d); /* Example: yello to orange */
+    margin:0;
+}
+ol{
+   list-style-type:none;
+   background-color: olivedrab;
+   margin: 0;
+   display: flex;
+   left:10px;
+   right: 10px;
+}
+ol li{
+    display: inline-block;
+    color:white;
+    padding: 30px 110px 30px 110px;
+    border-right: 1px solid white;
+}
+li:hover{
+    background-color:rgb(128, 71, 6);
+    color: bisque;
+}
+ol li a{
+    text-decoration: none;
+    color: white;
+    height:100%;
+    text-align: center;
+}
+li a:hover{
+    background-color:rgb(128, 71, 6);
+    color: bisque;
+}
+nav ol li:last-child{
+border-right: none;
+}
+.home{
+    text-align: center;
+}
+.home h1{
+    font-size: 250%;
+}
+.home p{
+    font-size: 150%;
+    font-style: oblique;
+}
+.imgs{
+   justify-content:space-between;
+    display: flex;
+}
+.imgs img{
+    width:700px;
+    height:500px;
+    margin:20px;
+}
+.imgs img, .foodimg img{
+    border-radius: 15px;
+}
+.foodandtext{
+    display: flex;
+    align-items: center;
+    /* flex-wrap: wrap;
+    margin:20px; */
+}
+.foodimg img{
+    height:350px;
+    width:600px;
+    margin:30px 100px 30px 30px;
+}
+.foodtext{
+    text-align:center;
+}
+.items{
+   display: flex;
+   justify-content: space-between;
+   max-width:1000px;
+   margin: auto;
+}
+.item{
+    position: relative;
+    width:300px;
+    margin:10px;
+}
+.item img{
+    height: 200px;
+    width:100%;
+    border-radius:15px 15px 0 0;
+}
+.text-overlay{
+    background-color: rgba(255,255,255,0.5);
+    text-align: center;
+    padding: 10px;
+    border-radius: 0 0 15px 15px;
+}
+.text-overlay h4{
+    margin: 5px 1px;
+}
+.text-overlay p{
+    margin: 2px;
+    font-size: 15px;
+}
+footer{
+    text-align: center;
+    padding: 10px;
+    background-color: #883704;
+    color: #fff;
+}

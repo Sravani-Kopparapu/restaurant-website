@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="rest.css">
+    <script>
+      window.onload = function () {
+        window.scrollTo(0, 0);
+      };
+    </script>
+    <title>SAREGAMA Spices</title>
+  </head>
+  <body>
+    <header class="home">
+      <h1>SAREGAMA SPICES</h1>
+      <p>Flavours as authentic as SAREGAMAS</p>
+      <nav>
+        <ol>
+          <li><a href="#home">Home</a></li>
+          <li><a href="menu.html" target="_blank">Menu</a></li>
+          <li><a href="order.html" target="_blank">Order Food</a></li>
+          <li><a href="cater.html" target="_blank">Catering</a></li>
+          <li><a href="contact.html" target="_blank">Contact Us</a></li>
+        </ol>
+      </nav>
+    </header>
+    <main id="home">
+      <section>
+        <div class="imgs">
+          <img class="img1" src="Images/myrestau.jpg" alt="Restaurant image">
+          <img class="img2" src="Images/my restau2.jpg" alt="restaurent image">
+        </div>
+      </section>
+      <section id="second">
+        <div class="foodandtext">
+          <div class="foodimg">
+            <img src="Images/secpage2.jpg" alt="kadai recipe">
+          </div>
+          <div class="foodtext">
+            <h1>About SAREGAMA Spices </h1>
+            <p>We believe that every meal tells a story,and every spice sings <br> a melody.Inspired by the soulful rhythms of tradition and<br> the vibrant diversity of Indian cuisine,we’ve crafted a dining<br> experience that will harmonize with your taste buds and leave you craving more.</p>
+          </div>
+        </div>
+      </section>
+      <section id="offer">
+        <h2 style="text-align: center;">WHAT WE OFFER...</h2>
+        <div class="items">
+          <div class="item">
+            <img src="Images/breakfast.jpg" alt="Tiffins">
+            <div class="text-overlay">
+              <h4>TIFFINS</h4>
+              <p>A wide range of south indian breakfast recipes rich in taste,aroma and quality that will leave you craving for more</p>
+            </div>
+          </div>
+          <div class="item">
+            <img src="Images/thali.jpg" alt="thali">
+            <div class="text-overlay">
+              <h4>THALIS</h4>
+              <p>A masterpiece that brings together the best of flavors, colors, and culture—dig into the soulful symphony</p>
+            </div>
+          </div>
+          <div class="item">
+            <img src="Images/biryani.jpg" alt="biryani">
+            <div class="text-overlay">
+              <h4>BIRYANIS</h4>
+              <p>Where every grain of rice tells a story—immerse yourself in the irresistible aroma and flavors of this biryani perfection</p>
+            </div>
+          </div>
+          <div class="item">
+            <img src="Images/paneer.jpg" alt="paneer">
+            <div class="text-overlay">
+              <h4>PANEER RECIPES</h4>
+              <p>Paneer perfection on a plate—creamy, flavorful, smooth and fluffy and absolutely delicous which makes you a paneer lover</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>Visit us and enjoy authentic flavors! © 2024 SARIGAMA SPICES</p>
+    </footer>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        var homeLink = document.querySelector('nav a[href="#home"]');
+        if (homeLink) {
+          homeLink.addEventListener('click', function (event) {
+            event.preventDefault();
+            var currentY = window.scrollY || document.documentElement.scrollTop || 0;
+            if (currentY <= 10) {
+              window.scrollBy({ top: 150, behavior: 'smooth' });
+            } else {
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+          });
+        }
+      });
+    </script>
+  </body>
+</html>

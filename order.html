@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Food - SAREGAMA SPICES</title>
+  <link rel="stylesheet" href="order.css">
+  <script src="order.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Order Food from SAREGAMA SPICES</h1>
+    <p>Enjoy delicious South and North Indian vegetarian dishes at your convenience!</p>
+  </header>
+  <main>
+    <section>
+      <h2>Place Your Order</h2>
+      <form action="#" method="post" id="order-form">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+        
+        <label for="address">Delivery Address:</label>
+        <textarea id="address" name="address" placeholder="Enter your address" rows="3" required></textarea>
+        
+        <label for="cuisine">Select Your Cuisine:</label>
+        <select id="cuisine" name="cuisine" required>
+            <option value="tiffins">Tiffins</option>
+            <option value="south-indian">South Indian</option>
+            <option value="north-indian">North Indian</option>
+            <option value="biryanis">Biryanis</option>
+        </select>
+
+        <label for="dish">Select your Dish:</label>
+        <select id="dish" name="dish" required>
+          <option value="idli">Idli</option>
+          <option value="dosa">Dosa</option>
+          <option value="paneer-butter-masala">Paneer Butter Masala</option>
+          <option value="dal-tadka">Dal Tadka</option>
+          <option value="gulab-jamun">Gulab Jamun</option>
+        </select>
+        
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="20" required>
+        
+        <button type="button" onclick="placeOrder()">Place Order</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>© 2024 SAREGAMA SPICES. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
